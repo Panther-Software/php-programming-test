@@ -11,7 +11,7 @@ $dependencies = [
         ]
     ],
     ['src' => 'style/stylesheet.css'],
-    ['src' => 'style/recruitment/recruitment.css'],
+    ['src' => 'style/recruitment/recruitment.css?pickle=rick'],
     [
         'src' => 'https://code.jquery.com/jquery-3.7.1.min.js',
         'attributes' => [
@@ -48,9 +48,18 @@ echo <<<HTML
                 font-weight: bold;
             }
         </style>
+        <script>
+            // check jQuery is loaded
+            if(typeof jQuery !== 'undefined') {
+                $(function() {
+                    console.log('✅ jQuery is loaded');
+                    $('#jqueryLoaded').attr('class', 'success').text('Yes!');
+                });
+            }
+        </script>
     </head>
     <body>
-        <h1>CCD Programming Test</h1>
+        <h1>CCD Backend PHP Developer Test</h1>
         <p>Javascript loaded: <span class="fail" id="javascriptLoaded">No!</span></p>
         <p>CSS loaded: <span class="cssLoaded fail">No!</span><span class="cssLoaded success"></span></p>
         <p>jQuery loaded: <span class="fail" id="jqueryLoaded">No!</span></p>

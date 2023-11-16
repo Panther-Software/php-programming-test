@@ -12,15 +12,15 @@ For local dependencies, the method should also append a query string to the end 
 
 Generating integrity hashes is expensive, thus you should cache the generated hashes to `.cache/dependencies.json`.
 
-You should spend no more than **90 minutes** on this task. The goal of this exercise is not necessarily to complete the task, but to demonstrate your approach to problem solving and your ability to write clean, maintainable code.
+You should spend no more than **2 hours** on this task. The goal of this exercise is not necessarily to complete the task, but to demonstrate your approach to problem solving and your ability to write clean, maintainable code.
 
-Please do not use any third-party libraries or frameworks. Your code must run on PHP 7.4 or later. This is a test of *your* PHP skills, not that of Copilot or ChatGPT - if their use is not detected by our plagiarism detection software, it will become obvious at a later date if you are not otherwise capable of writing the code yourself.
+Please do not use any third-party libraries or frameworks. Your code must run on PHP 7.4 or later. This is a test of *your* PHP skills, not that of Copilot or ChatGPT - if their use is not detected by our plagiarism detection software, it will become obvious at a later date if you are not otherwise capable of writing the code yourself. You may use Google for help, but copy and pasting code is not permitted.
 
 ## Getting Started
 
 1. Download this repository
 2. Edit only `class.ccd_dependencies.php`
-3. Once you have finished or the 90 minutes is up, send your edited `class.ccd_dependencies.php` file back to us
+3. Once you have finished or the 2 hours is up, send your edited `class.ccd_dependencies.php` file back to us
 
 ## Input Array
 
@@ -50,13 +50,13 @@ $dependencies_html = dependencies::get_dependencies_html([
 ## Desired Output
 
 ```html
-<link rel="icon" href="https://zany.sh/favicon.svg?emoji=🔥">
-<link rel="stylesheet" href="style/stylesheet.css?m=1672531200" integrity="sha256-generated-hash" crossorigin="anonymous">
-<link rel="stylesheet" href="style/recruitment/recruitment.css?pickle=rick&m=1672617600" integrity="sha256-generated-hash" crossorigin="anonymous">
+<link href="https://zany.sh/favicon.svg?emoji=🔥" rel="icon">
+<link href="style/stylesheet.css?m=1672531200" rel="stylesheet" integrity="sha256-generated-hash" crossorigin="anonymous">
+<link href="style/recruitment/recruitment.css?pickle=rick&m=1672617600" rel="stylesheet" integrity="sha256-generated-hash" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="scripts/site.js?m=1672704000" integrity="sha256-generated-hash" crossorigin="anonymous"></script>
 <script src="scripts/recruitment/recruitment.js?m=1672790400" integrity="sha256-generated-hash" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link src="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
 ```
