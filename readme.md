@@ -1,6 +1,9 @@
 
 # CCD Backend PHP Developer Test
 
+> [!CAUTION]
+> Note - please DO NOT submit pull requests to this repository.
+
 Your task is to complete the `get_dependencies_html()` method in `class.ccd_dependencies.php` such that given the below array of dependencies, it will return a string of HTML tags matching the desired output below.
 
 You must only edit and submit the `class.ccd_dependencies.php` file. `index.php` has been provided to help you test your code.
