@@ -1,0 +1,3 @@
+.cssLoaded.success:before {
+    content: 'Yes!';
+}
