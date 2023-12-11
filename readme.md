@@ -1,12 +1,12 @@
 
-# CCD Backend PHP Developer Test
+# Panther Backend PHP Developer Test
 
 > [!CAUTION]
 > Note - please DO NOT submit pull requests to this repository.
 
-Your task is to complete the `get_dependencies_html()` method in `class.ccd_dependencies.php` such that given the below array of dependencies, it will return a string of HTML tags matching the desired output below.
+Your task is to complete the `get_dependencies_html()` method in `class.panther_dependencies.php` such that given the below array of dependencies, it will return a string of HTML tags matching the desired output below.
 
-You must only edit and submit the `class.ccd_dependencies.php` file. `index.php` has been provided to help you test your code.
+You must only edit and submit the `class.panther_dependencies.php` file. `index.php` has been provided to help you test your code.
 
 For local dependencies, the method should also append a query string to the end of each dependency URL, containing the last modified time of the file (in seconds since the Unix Epoch). The method should also generate a subresource `integrity` hash attribute for local dependencies.
 
@@ -19,8 +19,8 @@ Please do not use any third-party libraries or frameworks. Your code must run on
 ## Getting Started
 
 1. Download this repository
-2. Edit only `class.ccd_dependencies.php`
-3. Once you have finished or the 2 hours is up, send your edited `class.ccd_dependencies.php` file back to us
+2. Edit only `class.panther_dependencies.php`
+3. Once you have finished or the 2 hours is up, send your edited `class.panther_dependencies.php` file back to us
 
 ## Input Array
 

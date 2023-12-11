@@ -1,6 +1,6 @@
 <?php
 
-namespace ccd;
+namespace panther;
 
 class dependencies {
 

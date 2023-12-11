@@ -1,7 +1,7 @@
 <?php
 
-require_once 'class.ccd_dependencies.php';
-use ccd\dependencies;
+require_once 'class.panther_dependencies.php';
+use panther\dependencies;
 
 $dependencies = [
     [
@@ -31,7 +31,7 @@ echo <<<HTML
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>CCD Backend PHP Developer Test</title>
+        <title>Panther Backend PHP Developer Test</title>
         {$dependencies_html}
         <style>
             .cssLoaded.success {
@@ -59,7 +59,7 @@ echo <<<HTML
         </script>
     </head>
     <body>
-        <h1>CCD Backend PHP Developer Test</h1>
+        <h1>Panther Backend PHP Developer Test</h1>
         <p>Javascript loaded: <span class="fail" id="javascriptLoaded">No!</span></p>
         <p>CSS loaded: <span class="cssLoaded fail">No!</span><span class="cssLoaded success"></span></p>
         <p>jQuery loaded: <span class="fail" id="jqueryLoaded">No!</span></p>
